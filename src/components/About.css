@@ -1,0 +1,1094 @@
+.about-section {
+  width: 100%;
+
+  padding: 110px 7%;
+
+  background: var(--page-bg);
+
+  color: var(--heading-color);
+
+  overflow: hidden;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.about-container {
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   ABOUT HEADING
+========================= */
+
+.about-heading {
+  max-width: 800px;
+
+  margin-bottom: 70px;
+}
+
+.about-label {
+  margin-bottom: 15px;
+
+  color: var(--accent-color);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.about-heading h2 {
+  margin-bottom: 22px;
+
+  color: var(--heading-color);
+
+  font-size: clamp(36px, 4vw, 52px);
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+.about-heading h2 span {
+  color: var(--accent-color);
+}
+
+.about-intro {
+  max-width: 700px;
+
+  color: var(--muted-color);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 0.9fr);
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.about-text {
+  min-width: 0;
+}
+
+.about-text > p {
+  margin-bottom: 20px;
+
+  color: var(--muted-color);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   ABOUT ROLE
+========================= */
+
+.about-role {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.about-role-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(44, 234, 163, 0.1);
+
+  color: var(--accent-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 12px;
+
+  font-size: 18px;
+}
+
+.about-role h3 {
+  margin-bottom: 5px;
+
+  color: var(--heading-color);
+
+  font-size: 18px;
+}
+
+.about-role p {
+  color: var(--muted-color);
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   ABOUT HIGHLIGHTS
+========================= */
+
+.about-highlights {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+.about-highlight {
+  position: relative;
+
+  min-width: 0;
+
+  padding: 18px;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 12px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* =========================
+   LEFT GREEN ACCENT LINE
+========================= */
+
+.about-highlight::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 3px;
+  height: 0;
+
+  background: var(--accent-color);
+
+  transition: height 0.3s ease;
+
+  z-index: 1;
+}
+
+.about-highlight:hover::before {
+  height: 100%;
+}
+
+
+/* =========================
+   TOP-RIGHT CURVE
+========================= */
+
+.about-highlight::after {
+  content: "";
+
+  position: absolute;
+
+  top: -55px;
+  right: -55px;
+
+  width: 120px;
+  height: 120px;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 50%;
+
+  background: var(--secondary-card-bg);
+
+  opacity: 0.9;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+/* Keep content above decorations */
+
+.about-highlight > * {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Highlight hover */
+
+.about-highlight:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--accent-color);
+}
+
+
+/* =========================
+   HIGHLIGHT ICON
+========================= */
+
+.highlight-icon {
+  width: 35px;
+  height: 35px;
+
+  margin-bottom: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(44, 234, 163, 0.1);
+
+  color: var(--accent-color);
+
+  border-radius: 8px;
+
+  font-size: 13px;
+}
+
+.about-highlight h4 {
+  margin-bottom: 7px;
+
+  color: var(--heading-color);
+
+  font-size: 13px;
+}
+
+.about-highlight p {
+  color: var(--muted-color);
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   ABOUT VISUAL
+========================= */
+
+.about-visual {
+  width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.about-card {
+  width: 100%;
+
+  max-width: 500px;
+
+  padding: 30px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.12);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.about-card-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.about-main-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent-color);
+
+  color: #07110d;
+
+  border-radius: 12px;
+
+  font-size: 18px;
+}
+
+.about-card-top p {
+  margin-bottom: 5px;
+
+  color: var(--muted-color);
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+.about-card-top h3 {
+  color: var(--heading-color);
+
+  font-size: 20px;
+}
+
+
+/* =========================
+   ABOUT SKILLS
+========================= */
+
+.about-skill {
+  margin-bottom: 25px;
+}
+
+.about-skill-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+
+  color: var(--heading-color);
+
+  font-size: 12px;
+}
+
+.about-skill-header svg {
+  color: var(--accent-color);
+}
+
+.skill-line {
+  width: 100%;
+
+  height: 7px;
+
+  background: var(--secondary-card-bg);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.skill-fill {
+  display: block;
+
+  height: 100%;
+
+  background: var(--accent-color);
+
+  border-radius: 20px;
+}
+
+.seo-fill {
+  width: 85%;
+}
+
+.social-fill {
+  width: 90%;
+}
+
+.ads-fill {
+  width: 75%;
+}
+
+
+/* =========================
+   ABOUT CARD BOTTOM
+========================= */
+
+.about-card-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 30px;
+
+  padding: 15px;
+
+  background: var(--secondary-card-bg);
+
+  border-radius: 10px;
+}
+
+.about-card-bottom svg {
+  flex-shrink: 0;
+
+  color: var(--accent-color);
+}
+
+.about-card-bottom p {
+  color: var(--muted-color);
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   RESUME BUTTON
+========================= */
+
+.about-resume-action {
+  display: flex;
+
+  justify-content: flex-start;
+
+  margin-top: 45px;
+}
+
+.about-resume-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 20px;
+
+  color: #07110d;
+
+  background: var(--accent-color);
+
+  border: 1px solid var(--accent-color);
+
+  border-radius: 10px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-resume-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(44, 234, 163, 0.2);
+}
+
+.about-resume-button svg {
+  font-size: 12px;
+}
+
+
+/* =========================
+   MY WORK & PROJECTS
+========================= */
+
+.about-work-section {
+  margin-top: 125px;
+}
+
+.about-subheading {
+  max-width: 760px;
+
+  margin-bottom: 55px;
+}
+
+.about-subheading h2 {
+  margin-bottom: 20px;
+
+  color: var(--heading-color);
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+.about-subheading h2 span {
+  color: var(--accent-color);
+}
+
+.about-subheading > p:last-child {
+  max-width: 700px;
+
+  color: var(--muted-color);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.about-project-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.about-project-card {
+  position: relative;
+
+  min-width: 0;
+
+  padding: 28px;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Top-right curve */
+
+.about-project-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: -55px;
+  right: -55px;
+
+  width: 120px;
+  height: 120px;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 50%;
+
+  background: var(--secondary-card-bg);
+
+  opacity: 0.9;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+/* Left green accent line */
+
+.about-project-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 3px;
+  height: 0;
+
+  background: var(--accent-color);
+
+  transition: height 0.3s ease;
+
+  z-index: 1;
+}
+
+.about-project-card:hover::before {
+  height: 100%;
+}
+
+.about-project-card:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--accent-color);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Project icon */
+
+.about-project-icon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 50px;
+  height: 50px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: var(--secondary-card-bg);
+
+  color: var(--accent-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 12px;
+
+  font-size: 18px;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.about-project-card:hover .about-project-icon {
+  border-color: var(--accent-color);
+}
+
+
+/* Project content */
+
+.about-project-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+.about-project-type {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--muted-color);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.about-project-content h3 {
+  margin-bottom: 14px;
+
+  color: var(--heading-color);
+
+  font-size: 21px;
+
+  line-height: 1.3;
+}
+
+.about-project-content > p {
+  margin-bottom: 20px;
+
+  color: var(--muted-color);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* Project skills */
+
+.about-project-skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 22px;
+}
+
+.about-project-skills span {
+  padding: 6px 9px;
+
+  color: var(--muted-color);
+
+  background: var(--secondary-card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 20px;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* Website link */
+
+.about-project-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--accent-color);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
+
+.about-project-link:hover {
+  gap: 11px;
+}
+
+.about-project-link svg {
+  font-size: 11px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1023px) {
+
+  .about-section {
+    padding: 90px 6%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-text {
+    max-width: 750px;
+  }
+
+  .about-visual {
+    justify-content: flex-start;
+  }
+
+  .about-card {
+    max-width: 650px;
+  }
+
+  .about-project-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .about-work-section {
+    margin-top: 100px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  .about-section {
+    padding: 75px 20px;
+  }
+
+  .about-heading {
+    margin-bottom: 45px;
+  }
+
+  .about-label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .about-heading h2 {
+    font-size: 34px;
+
+    line-height: 1.2;
+  }
+
+  .about-intro {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
+  .about-role {
+    margin-bottom: 25px;
+  }
+
+  .about-text > p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  /* Highlight cards */
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 30px;
+  }
+
+  .about-highlight {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+  }
+
+  .highlight-icon {
+    margin-bottom: 0;
+
+    flex-shrink: 0;
+  }
+
+  .about-highlight h4 {
+    margin-bottom: 3px;
+  }
+
+
+  /* Highlight curve */
+
+  .about-highlight::after {
+    top: -50px;
+
+    right: -50px;
+
+    width: 105px;
+    height: 105px;
+  }
+
+
+  /* Resume */
+
+  .about-resume-action {
+    margin-top: 35px;
+  }
+
+  .about-resume-button {
+    padding: 12px 17px;
+
+    font-size: 12px;
+  }
+
+
+  /* About card */
+
+  .about-card {
+    padding: 22px;
+
+    border-radius: 16px;
+  }
+
+  .about-card-top {
+    margin-bottom: 28px;
+  }
+
+  .about-card-top h3 {
+    font-size: 17px;
+  }
+
+
+  /* Work */
+
+  .about-work-section {
+    margin-top: 80px;
+  }
+
+  .about-subheading {
+    margin-bottom: 40px;
+  }
+
+  .about-subheading h2 {
+    font-size: 32px;
+  }
+
+  .about-subheading > p:last-child {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .about-project-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .about-project-card {
+    padding: 22px;
+  }
+
+  .about-project-content h3 {
+    font-size: 19px;
+  }
+
+  .about-project-content > p {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .about-section {
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+  .about-project-card::after {
+    top: -50px;
+
+    right: -50px;
+
+    width: 105px;
+    height: 105px;
+  }
+
+  .about-project-card {
+    padding: 20px;
+  }
+
+  .about-project-icon {
+    width: 46px;
+    height: 46px;
+
+    margin-bottom: 20px;
+  }
+
+  .about-project-content h3 {
+    font-size: 18px;
+  }
+
+  .about-project-skills span {
+    font-size: 8px;
+  }
+
+}
+
+
+/* =========================
+   EXTRA SMALL
+========================= */
+
+@media (max-width: 380px) {
+
+  .about-section {
+    padding-left: 16px;
+
+    padding-right: 16px;
+  }
+
+  .about-heading h2 {
+    font-size: 30px;
+  }
+
+  .about-intro {
+    font-size: 13px;
+  }
+
+  .about-card {
+    padding: 18px;
+  }
+
+  .about-project-card {
+    padding: 18px;
+  }
+
+}

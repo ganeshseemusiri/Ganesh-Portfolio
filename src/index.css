@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+html {
+  width: 100%;
+
+  min-width: 0;
+
+  scroll-behavior: smooth;
+}
+
+
+body {
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow-x: hidden;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: var(--page-bg);
+
+  color: var(--heading-color);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+#root {
+  width: 100%;
+  min-width: 0;
+
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+
+:root {
+
+  --page-bg: #f4f8f6;
+
+  --nav-bg: #ffffff;
+
+  --card-bg: #ffffff;
+
+  --secondary-card-bg: #edf5f1;
+
+  --heading-color: #07120e;
+
+  --muted-color: #61716b;
+
+  --border-color: #d8e2dd;
+}
+
+
+.dark-theme {
+
+  --page-bg: #06110d;
+
+  --nav-bg: #06110d;
+
+  --card-bg: #0b1c16;
+
+  --secondary-card-bg: #0e241c;
+
+  --heading-color: #ffffff;
+
+  --muted-color: #91a59d;
+
+  --border-color: #1b342b;
+}
+
+
+::selection {
+  background: #2ceaa3;
+
+  color: #06110d;
+}
+
+
+a {
+  color: inherit;
+}
+
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}

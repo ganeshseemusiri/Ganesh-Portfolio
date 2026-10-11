@@ -1,0 +1,135 @@
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 0;
+
+  overflow-x: hidden;
+
+  background: var(--page-bg);
+  color: var(--heading-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.app.dark-theme {
+
+  --page-bg: #06110d;
+
+  --nav-bg: #06110d;
+
+  --card-bg: #0b1c16;
+
+  --secondary-card-bg: #0e241c;
+
+  --heading-color: #ffffff;
+
+  --text-color: #d5ded9;
+
+  --muted-color: #91a59d;
+
+  --nav-text: #aebbb5;
+
+  --border-color: #1b342b;
+
+  --accent-color: #2ceaa3;
+
+  --button-bg: #0e241c;
+
+  --button-icon: #ffffff;
+
+  --grid-line: rgba(255, 255, 255, 0.05);
+}
+
+
+.app.light-theme {
+
+  --page-bg: #f4f8f6;
+
+  --nav-bg: #ffffff;
+
+  --card-bg: #ffffff;
+
+  --secondary-card-bg: #edf5f1;
+
+  --heading-color: #07120e;
+
+  --text-color: #34443d;
+
+  --muted-color: #61716b;
+
+  --nav-text: #46554e;
+
+  --border-color: #d8e2dd;
+
+  --accent-color: #20d995;
+
+  --button-bg: #f0f5f2;
+
+  --button-icon: #07120e;
+
+  --grid-line: rgba(16, 32, 25, 0.08);
+}
+
+
+.app main {
+  width: 100%;
+  min-width: 0;
+
+  background: var(--page-bg);
+  color: var(--heading-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.app section {
+  background: var(--page-bg);
+  color: var(--heading-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.app h1,
+.app h2,
+.app h3,
+.app h4,
+.app h5,
+.app h6 {
+  color: var(--heading-color);
+
+  transition:
+    color 0.3s ease;
+}
+
+
+.app p {
+  transition:
+    color 0.3s ease;
+}
+
+
+@media (max-width: 767px) {
+
+  .app {
+    width: 100%;
+    min-width: 0;
+
+    overflow-x: hidden;
+  }
+
+  .app main {
+    width: 100%;
+    min-width: 0;
+
+    overflow-x: hidden;
+  }
+}
