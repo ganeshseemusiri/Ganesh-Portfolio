@@ -64,9 +64,6 @@ function About() {
 
       <div className="about-container">
 
-        {/* =========================
-            ABOUT ME
-        ========================= */}
 
         <div className="about-heading">
 
@@ -88,10 +85,6 @@ function About() {
 
         </div>
 
-
-        {/* =========================
-            ABOUT CONTENT
-        ========================= */}
 
         <div className="about-content">
 
@@ -134,13 +127,9 @@ function About() {
             </p>
 
 
-            {/* =========================
-                HIGHLIGHTS
-            ========================= */}
 
             <div className="about-highlights">
 
-              {/* STRATEGY */}
 
               <div className="about-highlight">
 
@@ -163,8 +152,6 @@ function About() {
               </div>
 
 
-              {/* EXECUTION */}
-
               <div className="about-highlight">
 
                 <div className="highlight-icon">
@@ -184,9 +171,6 @@ function About() {
                 </div>
 
               </div>
-
-
-              {/* ANALYSIS */}
 
               <div className="about-highlight">
 
@@ -211,11 +195,6 @@ function About() {
             </div>
 
           </div>
-
-
-          {/* =========================
-              ABOUT VISUAL
-          ========================= */}
 
           <div className="about-visual">
 
@@ -242,8 +221,6 @@ function About() {
               </div>
 
 
-              {/* SEO */}
-
               <div className="about-skill">
 
                 <div className="about-skill-header">
@@ -264,8 +241,6 @@ function About() {
 
               </div>
 
-
-              {/* SOCIAL MEDIA */}
 
               <div className="about-skill">
 
@@ -328,15 +303,10 @@ function About() {
 
         </div>
 
-
-        {/* =========================
-            RESUME BUTTON
-        ========================= */}
-
         <div className="about-resume-action">
 
           <a
-            href="/My Resume.pdf"
+            href="/My_Resume.pdf"
             download
             className="about-resume-button"
           >
@@ -345,11 +315,6 @@ function About() {
           </a>
 
         </div>
-
-
-        {/* =========================
-            MY WORK & PROJECTS
-        ========================= */}
 
         <div className="about-work-section">
 

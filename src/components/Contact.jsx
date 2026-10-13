@@ -12,14 +12,12 @@ import "./Contact.css";
 function Contact() {
   return (
     <section className="contact-section" id="contact">
-      {/* Decorative background */}
       <div className="contact-decoration contact-decoration-left"></div>
       <div className="contact-decoration contact-decoration-right"></div>
 
       <div className="contact-container">
         <div className="contact-content">
 
-          {/* LEFT SIDE */}
           <div className="contact-left">
 
             <div className="contact-heading">
@@ -40,7 +38,6 @@ function Contact() {
               </p>
             </div>
 
-            {/* Availability Card */}
             <div className="availability-card">
 
               <div className="availability-icon">
@@ -66,14 +63,14 @@ function Contact() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
+       
           <div className="contact-details-card">
 
             <h3 className="contact-details-title">
               CONTACT DETAILS
             </h3>
 
-            {/* Email */}
+        
             <div className="contact-detail-item">
 
               <div className="contact-detail-icon">
@@ -90,7 +87,7 @@ function Contact() {
 
             </div>
 
-            {/* Phone */}
+          
             <div className="contact-detail-item">
 
               <div className="contact-detail-icon">
@@ -107,7 +104,7 @@ function Contact() {
 
             </div>
 
-            {/* Location */}
+       
             <div className="contact-detail-item">
 
               <div className="contact-detail-icon">
@@ -124,7 +121,6 @@ function Contact() {
 
             </div>
 
-            {/* LinkedIn */}
             <a
               className="linkedin-contact-button"
               href="https://www.linkedin.com/in/ganesh-seemusiri-9a0b2a266/"

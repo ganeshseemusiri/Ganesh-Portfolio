@@ -17,7 +17,13 @@ function App() {
   };
 
   return (
-    <div className={darkMode ? "app dark-theme" : "app light-theme"}>
+    <div
+      className={
+        darkMode
+          ? "app dark-theme"
+          : "app light-theme"
+      }
+    >
 
       <Navbar
         darkMode={darkMode}
@@ -25,11 +31,17 @@ function App() {
       />
 
       <main>
+
         <Home />
+
         <About />
-        <Tools/>
-        <Certifications/>
-        <Contact/>
+
+        <Tools />
+
+        <Certifications />
+
+        <Contact />
+
       </main>
 
     </div>
