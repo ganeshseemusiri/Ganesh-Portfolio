@@ -796,13 +796,13 @@
 
 
   .floating-seo {
-    left: calc(37% - 320px);
+    left: calc(41% - 320px);
 
   }
 
 
   .floating-email {
-    right: calc(37% - 320px);
+    right: calc(41% - 320px);
 
   }
 }
