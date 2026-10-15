@@ -1002,6 +1002,8 @@
     border-radius: 15px;
 
     box-sizing: border-box;
+
+    margin-top: 20px;
   }
 
 
@@ -1066,8 +1068,43 @@
 
 
   .floating-card {
-    display: none;
-  }
+  display: flex;
+
+  gap: 7px;
+
+  padding: 8px 10px;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.18);
+
+  z-index: 4;
+}
+
+.floating-card > svg {
+  font-size: 11px;
+}
+
+.floating-card p {
+  margin: 0 0 2px;
+
+  font-size: 8px;
+}
+
+.floating-card span {
+  font-size: 6.5px;
+}
+
+.floating-seo {
+  top: -5%;
+  left: -5px;
+}
+
+.floating-email {
+  right: -5px;
+  bottom: -10%;
+}
 }
 
 
