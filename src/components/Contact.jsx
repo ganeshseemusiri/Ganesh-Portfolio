@@ -123,7 +123,7 @@ function Contact() {
 
             <a
               className="linkedin-contact-button"
-              href="https://www.linkedin.com/in/ganesh-seemusiri-9a0b2a266/"
+              href="https://www.linkedin.com/in/ganesh-seemusiri/"
               target="_blank"
               rel="noopener noreferrer"
             >

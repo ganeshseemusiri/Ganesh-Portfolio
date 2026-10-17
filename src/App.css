@@ -109,7 +109,7 @@
 
   filter: blur(2px);
 
-  opacity: 0.72;
+  opacity: 0.90;
 
   pointer-events: none;
 
@@ -140,9 +140,9 @@
       transparent 76%
     );
 
-  filter: blur(3px);
+  filter: blur(10px);
 
-  opacity: 0.58;
+  opacity: 0.90;
 
   pointer-events: none;
 
@@ -175,7 +175,7 @@
 
   filter: blur(2px);
 
-  opacity: 0.68;
+  opacity: 0.90;
 
   pointer-events: none;
 
@@ -208,7 +208,7 @@
 
   filter: blur(3px);
 
-  opacity: 0.62;
+  opacity: 0.90;
 
   pointer-events: none;
 
